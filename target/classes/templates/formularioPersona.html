@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario de registro de persona testeada</title>
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div th:insert="layout/headercuenta :: headercuenta"></div>
+
+	<h3>
+		<center>Registro de persona testeada</center>
+	</h3>
+	<form class="container">
+		<div class="form-group row">
+			<label for="idapellido" class="col-md-3 col-form-label">Apellido</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control " id="idapellido" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idnombreCompleto" class="col-md-3 col-form-label">Nombre
+				Completo</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control " id="idnombreCompleto"
+					required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="iddni" class="col-md-3 col-form-label">N° DNI</label>
+			<div class="col-md-8">
+				<input type="number" class="form-control " id="iddni" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idedad" class="col-md-3 col-form-label">Edad</label>
+			<div class="col-md-8">
+				<input type="number" class="form-control " id="idedad" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="iddireccion" class="col-md-3 col-form-label">Direccion(calle)</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control " id="iddireccion" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idbarrio" class="col-md-3 col-form-label">Barrio</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control " id="idbarrio" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idfechaNacimiento" class="col-md-3 col-form-label">Fecha
+				de Nacimiento</label>
+			<div class="col-md-8">
+				<input type="date" class="form-control " id="idfechaNacimiento"
+					required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idtemperatura" class="col-md-3 col-form-label">Temperatura
+				°C</label>
+			<div class="col-md-8">
+				<input type="number" class="form-control " id="idtemperatura"
+					required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="idgrupoSanguineo" class="col-md-3 col-form-label">Grupo
+				Sanguineo</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control " id="idgrupoSanguineo"
+					required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-md-10">
+				<button type="submit" class="btn btn-primary">Registrar</button>
+			</div>
+		</div>
+	</form>
+
+
+	<div th:insert="layout/footer :: footer"></div>
+</body>
+</html>

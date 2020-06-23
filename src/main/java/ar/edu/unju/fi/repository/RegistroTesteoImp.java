@@ -19,7 +19,7 @@ public class RegistroTesteoImp implements IRegistroTesteo {
 	@Override
 	public void guardar() {
 		// accion ejecutada para guardar un objeto registroTesteo en la BD
-		LOG.info("Se registro el testeo"+registroTesteo.getPersonasTesteadas());
+		LOG.info("Se registro el testeo");
  
 	}
 
