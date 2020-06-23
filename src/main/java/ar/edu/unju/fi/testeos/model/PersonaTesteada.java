@@ -1,5 +1,8 @@
 package ar.edu.unju.fi.testeos.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PersonaTesteada {
 
 	private String documento;
